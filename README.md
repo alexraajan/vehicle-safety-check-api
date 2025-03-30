@@ -7,8 +7,42 @@ This is the **backend API** for the Vehicle Safety Check application, built usin
 Looking for the frontend? Check out the [Flutter app here](https://github.com/alexraajan/vehicle-safety-check-flutter)
 
 ---
+### Setup Instructions
+```plaintext
+1) Clone the repository:
+                      git clone https://github.com/alexraajan/vehicle-safety-check-api.git
+                      cd vehicle-safety-check-api
+2) Install dependencies:
+                        pip install python-dotenv
+                        pip install flask 
+                        pip install pyodbc 
+                        pip install flasgger 
+                        pip install pytest
+                        pip install flask-cors
+3) Configure the database in env_parameters.json:
+                                    {
+                                      "environment": "dev",
+                                      "dev": {
+                                        "DbConnectionString": "DRIVER={ODBC Driver 17 for SQL Server};SERVER=ALEX_LENOVO\\SQLEXPRESS;DATABASE=ProjectSG;Trusted_Connection=yes"
+                                      }
+                                    }
+4) Run the app: python app.py
 
-Features
+Database Setup
+CREATE DATABASE ProjectSG;
+USE ProjectSG;
+
+CREATE TABLE VehicleDetails (
+  vehicle_no VARCHAR(10) PRIMARY KEY,
+  no_of_safety_check INT,
+  isCompleted TINYINT
+);
+
+```
+
+---
+
+### Features
 
 - Add new vehicle safety records
 - Fetch a single or all vehicle records
@@ -21,20 +55,7 @@ Features
 
 ---
 
-Features
-
-- Add new vehicle safety records
-- Fetch a single or all vehicle records
-- Update vehicle safety check status
-- Delete vehicle records
-- Swagger documentation (Auto-generated)
-  Unit tests with `unittest`
-- MSSQL Database integration
-- Dependency Injection (for clean architecture)
-
----
-
-Tech Stack
+### Tech Stack
 
 - Python 3.11+
 - Flask
@@ -78,39 +99,6 @@ Sample test coverage includes:
 
 ![Test Result](assets/test-result.png)
 
----
-### Setup Instructions
-```plaintext
-1) Clone the repository:
-                      git clone https://github.com/alexraajan/vehicle-safety-check-api.git
-                      cd vehicle-safety-check-api
-2) Install dependencies:
-                        pip install python-dotenv
-                        pip install flask 
-                        pip install pyodbc 
-                        pip install flasgger 
-                        pip install pytest
-                        pip install flask-cors
-3) Configure the database in env_parameters.json:
-                                    {
-                                      "environment": "dev",
-                                      "dev": {
-                                        "DbConnectionString": "DRIVER={ODBC Driver 17 for SQL Server};SERVER=ALEX_LENOVO\\SQLEXPRESS;DATABASE=ProjectSG;Trusted_Connection=yes"
-                                      }
-                                    }
-4) Run the app: python app.py
-
-Database Setup
-CREATE DATABASE ProjectSG;
-USE ProjectSG;
-
-CREATE TABLE VehicleDetails (
-  vehicle_no VARCHAR(10) PRIMARY KEY,
-  no_of_safety_check INT,
-  isCompleted TINYINT
-);
-
-```
 ---
 ### API Endpoints
 ```plaintext
