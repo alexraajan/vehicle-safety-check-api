@@ -44,6 +44,21 @@ project_API/
 ├── tests/
 │   └── test_app.py         # Unit tests for all endpoints
 
+
+---
+
+Project Structure
+
+```plaintext
+project_API/
+├── app.py                  # Main Flask application
+├── businessLayer.py        # Business logic layer
+├── databaseLayer.py        # Database operations layer
+├── entity.py               # Entity class for Vehicle
+├── env_parameters.json     # Environment configuration
+├── tests/
+│   └── test_app.py         # Unit tests for all endpoints
+
 ---
 
 ### Unit Testing
