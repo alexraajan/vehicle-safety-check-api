@@ -47,20 +47,6 @@ Tech Stack
 
 Project Structure
 
-project_API/
-├── app.py                  # Main Flask application
-├── businessLayer.py        # Business logic layer
-├── databaseLayer.py        # Database operations layer
-├── entity.py               # Entity class for Vehicle
-├── env_parameters.json     # Environment configuration
-├── tests/
-│   └── test_app.py         # Unit tests for all endpoints
-
-
----
-
-Project Structure
-
 ```plaintext
 project_API/
 ├── app.py                  # Main Flask application
@@ -78,22 +64,23 @@ project_API/
 
 python -m unittest tests/test_app.py
 Sample test coverage includes:
-test_1_post_vehicle_success
-test_1_post_vehicle_conflict
-test_2_get_specific_vehicle_found
-test_2_get_specific_vehicle_not_found
-test_3_update_vehicle_success
-test_3_update_vehicle_fail
-test_4_get_all_vehicles_success
-test_4_get_all_vehicles_empty
-test_5_delete_vehicle_success
-test_5_delete_vehicle_not_found
-test_5_delete_vehicle_missing_param
+- test_1_post_vehicle_success
+- test_1_post_vehicle_conflict
+- test_2_get_specific_vehicle_found
+- test_2_get_specific_vehicle_not_found
+- test_3_update_vehicle_success
+- test_3_update_vehicle_fail
+- test_4_get_all_vehicles_success
+- test_4_get_all_vehicles_empty
+- test_5_delete_vehicle_success
+- test_5_delete_vehicle_not_found
+- test_5_delete_vehicle_missing_param
 
 ![Test Result](assets/test-result.png)
 
-
-Setup Instructions
+---
+### Setup Instructions
+```plaintext
 1) Clone the repository:
                       git clone https://github.com/alexraajan/vehicle-safety-check-api.git
                       cd vehicle-safety-check-api
@@ -123,31 +110,32 @@ CREATE TABLE VehicleDetails (
   isCompleted TINYINT
 );
 
-API Endpoints
+```
+---
+### API Endpoints
+```plaintext
 All endpoints are documented via Swagger UI at: http://localhost:5000/apidocs
 
 POST    /api/vehicle-details    Add a new vehicle
 GET 	  /api/vehicle-details	  Get all / specific vehicle
 PUT 	  /api/vehicle-details    Update vehicle info
 DELETE	/api/vehicle-details	  Delete a vehicle
-Swagger UI Screenshot:
-![Swagger UI](https://raw.githubusercontent.com/alexraajan/vehicle-safety-check-api/main/assets/swagger-ui.png)
+```
+---
 
+### Swagger UI Screenshot:
 ![Swagger UI](assets/swagger-ui.png)
-<img width="950" alt="image" src="https://github.com/user-attachments/assets/b63e497d-6456-4c00-844e-7d57f70ef4c0" />
 
-Architecture Notes
+---
+### Architecture Notes
+```plaintext
 This project follows a layered architecture with dependency injection for the database connection:
 connection_string = get_db_connection_string()
 db_context = DatabaseContext(connection_string)
 vehicle_repo = VehicleRepository(db_context)
 vehicle_service = VehicleService(vehicle_repo)
+```
 
-Additional Screenshots
-<img width="935" alt="image" src="https://github.com/user-attachments/assets/ba146061-a9ce-4bc2-88a2-0f126f42af61" />
-<img width="933" alt="image" src="https://github.com/user-attachments/assets/0757d348-a466-4d44-81a8-8394a0f3fdc0" />
-<img width="935" alt="image" src="https://github.com/user-attachments/assets/dc4d217e-2be4-4253-a371-b924414ce7d8" />
-<img width="933" alt="image" src="https://github.com/user-attachments/assets/23406472-2271-4a68-8181-11cc1e71aaf0" />
 
 
 
