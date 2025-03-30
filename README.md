@@ -21,6 +21,21 @@ Features
 
 ---
 
+---
+
+Features
+
+- Add new vehicle safety records
+- Fetch a single or all vehicle records
+- Update vehicle safety check status
+- Delete vehicle records
+- Swagger documentation (Auto-generated)
+  Unit tests with `unittest`
+- MSSQL Database integration
+- Dependency Injection (for clean architecture)
+
+---
+
 Tech Stack
 
 - Python 3.11+
