@@ -21,8 +21,6 @@ Features
 
 ---
 
----
-
 Features
 
 - Add new vehicle safety records
@@ -49,7 +47,6 @@ Tech Stack
 
 Project Structure
 
-```plaintext
 project_API/
 ├── app.py                  # Main Flask application
 ├── businessLayer.py        # Business logic layer
