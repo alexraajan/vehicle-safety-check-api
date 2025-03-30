@@ -1,0 +1,10 @@
+2025-03-29 11:54:30,624 [ERROR] Error occurredVehicle already exists
+2025-03-29 14:03:50,349 [ERROR] databaseLayer: Error inserting vehicle EQU879: Vehicle already exists
+2025-03-29 14:03:50,350 [ERROR] businessLayer: Error in vehicle_details(): Vehicle already exists
+2025-03-29 14:03:50,351 [ERROR] __main__: POST /VehicleDetails error: Vehicle already exists
+2025-03-29 14:55:28,858 [ERROR] databaseLayer: Error inserting vehicle TEST123: Vehicle already exists
+2025-03-29 14:55:28,859 [ERROR] businessLayer: Error in vehicle_details(): Vehicle already exists
+2025-03-29 14:55:28,860 [ERROR] __main__: POST /VehicleDetails error: Vehicle already exists
+2025-03-30 13:43:46,958 [ERROR] databaseLayer: Error inserting vehicle ABC23: Vehicle already exists
+2025-03-30 13:43:46,960 [ERROR] businessLayer: Error in vehicle_details(): Vehicle already exists
+2025-03-30 13:43:46,961 [ERROR] __main__: POST /VehicleDetails error: Vehicle already exists
