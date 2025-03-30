@@ -1,3 +1,8 @@
+### Sample Test Result
+
+![Test Result](assets/test-result.png)
+
+
 # Vehicle Safety Check API
 
 This is the **backend API** for the Vehicle Safety Check application, built using Python and Flask. It provides RESTful endpoints to perform Create, Read, Update, and Delete (CRUD) operations on vehicle safety records.
