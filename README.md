@@ -101,6 +101,8 @@ GET 	  /api/vehicle-details	  Get all / specific vehicle
 PUT 	  /api/vehicle-details    Update vehicle info
 DELETE	/api/vehicle-details	  Delete a vehicle
 Swagger UI Screenshot:
+![Swagger UI](https://raw.githubusercontent.com/alexraajan/vehicle-safety-check-api/main/assets/swagger-ui.png)
+
 ![Swagger UI](assets/swagger-ui.png)
 <img width="950" alt="image" src="https://github.com/user-attachments/assets/b63e497d-6456-4c00-844e-7d57f70ef4c0" />
 
