@@ -991,3 +991,147 @@
 2025-03-30 16:50:17,666 [WARNING] app: Vehicle not found or deletion failed: TEST1234
 2025-03-30 16:50:17,668 [INFO] app: DELETE /DeleteVehicleDetails called for: TEST1234
 2025-03-30 16:50:17,668 [INFO] app: Vehicle deleted: TEST1234
+2025-03-30 18:42:08,606 [INFO] __main__: GET /FetchAllVehicleDetails called with vehicle_no: None
+2025-03-30 18:42:08,607 [INFO] businessLayer: Fetching all vehicles
+2025-03-30 18:42:09,342 [INFO] databaseLayer: Fetching all vehicles
+2025-03-30 18:42:09,455 [INFO] databaseLayer: Fetched 3 vehicles
+2025-03-30 18:42:09,459 [INFO] __main__: Returning all vehicles. Count: 3
+2025-03-30 19:54:33,538 [INFO] __main__: GET /FetchAllVehicleDetails called with vehicle_no: None
+2025-03-30 19:54:33,549 [INFO] businessLayer: Fetching all vehicles
+2025-03-30 19:54:33,805 [INFO] databaseLayer: Fetching all vehicles
+2025-03-30 19:54:34,007 [INFO] databaseLayer: Fetched 3 vehicles
+2025-03-30 19:54:34,013 [INFO] __main__: Returning all vehicles. Count: 3
+2025-03-30 20:43:08,127 [INFO] __main__: GET /FetchAllVehicleDetails called with vehicle_no: ABC1234
+2025-03-30 20:43:08,131 [INFO] businessLayer: Fetching vehicle by number: ABC1234
+2025-03-30 20:43:08,233 [INFO] databaseLayer: Fetching vehicle by number: ABC1234
+2025-03-30 20:43:08,461 [WARNING] databaseLayer: Vehicle not found: ABC1234
+2025-03-30 20:43:08,467 [WARNING] __main__: Vehicle not found: ABC1234
+2025-03-30 21:06:33,977 [INFO] __main__: GET /FetchAllVehicleDetails called with vehicle_no: None
+2025-03-30 21:06:33,979 [INFO] businessLayer: Fetching all vehicles
+2025-03-30 21:06:34,426 [INFO] databaseLayer: Fetching all vehicles
+2025-03-30 21:06:34,447 [INFO] databaseLayer: Fetched 3 vehicles
+2025-03-30 21:06:34,450 [INFO] __main__: Returning all vehicles. Count: 3
+2025-03-30 21:06:44,095 [INFO] __main__: GET /FetchAllVehicleDetails called with vehicle_no: AB
+2025-03-30 21:06:44,097 [INFO] businessLayer: Fetching vehicle by number: AB
+2025-03-30 21:06:44,100 [INFO] databaseLayer: Fetching vehicle by number: AB
+2025-03-30 21:06:44,137 [INFO] databaseLayer: Vehicle found: AB
+2025-03-30 21:06:44,138 [INFO] __main__: Returning vehicle: ABC290
+2025-03-30 21:07:45,042 [INFO] __main__: POST /VehicleDetails called with: {'isCompleted': 0, 'no_of_safety_check': 11, 'vehicle_no': 'ABC289'}
+2025-03-30 21:07:45,043 [INFO] businessLayer: Creating vehicle: vehicle_no=ABC289, no_of_safety_check=11, isCompleted=0
+2025-03-30 21:07:45,045 [INFO] databaseLayer: Checking if vehicle exists: ABC289
+2025-03-30 21:07:45,109 [INFO] databaseLayer: Vehicle inserted: ABC289
+2025-03-30 21:07:45,111 [INFO] __main__: Vehicle created successfully.
+2025-03-30 21:08:12,211 [INFO] __main__: GET /FetchAllVehicleDetails called with vehicle_no: None
+2025-03-30 21:08:12,212 [INFO] businessLayer: Fetching all vehicles
+2025-03-30 21:08:12,215 [INFO] databaseLayer: Fetching all vehicles
+2025-03-30 21:08:12,222 [INFO] databaseLayer: Fetched 4 vehicles
+2025-03-30 21:08:12,223 [INFO] __main__: Returning all vehicles. Count: 4
+2025-03-30 21:08:30,995 [INFO] __main__: GET /FetchAllVehicleDetails called with vehicle_no: AB
+2025-03-30 21:08:30,996 [INFO] businessLayer: Fetching vehicle by number: AB
+2025-03-30 21:08:31,003 [INFO] databaseLayer: Fetching vehicle by number: AB
+2025-03-30 21:08:31,009 [INFO] databaseLayer: Vehicle found: AB
+2025-03-30 21:08:31,012 [INFO] __main__: Returning vehicle: ABC289
+2025-03-30 21:09:30,306 [INFO] __main__: POST /VehicleDetails called with: {'isCompleted': 0, 'no_of_safety_check': 11, 'vehicle_no': 'AB'}
+2025-03-30 21:09:30,311 [ERROR] businessLayer: Error in vehicle_details(): Invalid vehicle number. It must be 5–10 characters long and contain only A-Z, 0–9, hyphen, or space.
+2025-03-30 21:09:30,319 [ERROR] __main__: POST /VehicleDetails error: Invalid vehicle number. It must be 5–10 characters long and contain only A-Z, 0–9, hyphen, or space.
+2025-03-30 21:12:22,275 [INFO] __main__: GET /FetchAllVehicleDetails called with vehicle_no: AB
+2025-03-30 21:12:22,277 [INFO] businessLayer: Fetching vehicle by number: AB
+2025-03-30 21:12:22,603 [INFO] databaseLayer: Fetching vehicle by number: AB
+2025-03-30 21:12:22,653 [INFO] databaseLayer: Vehicle found: AB
+2025-03-30 21:12:22,656 [ERROR] businessLayer: Error in get_all_vehicle_details(): cannot access local variable 'rows' where it is not associated with a value
+2025-03-30 21:12:22,657 [ERROR] __main__: GET /FetchAllVehicleDetails error: cannot access local variable 'rows' where it is not associated with a value
+2025-03-30 21:12:51,550 [INFO] __main__: GET /FetchAllVehicleDetails called with vehicle_no: AB
+2025-03-30 21:12:51,550 [INFO] businessLayer: Fetching vehicle by number: AB
+2025-03-30 21:12:51,693 [INFO] databaseLayer: Fetching vehicle by number: AB
+2025-03-30 21:12:51,697 [INFO] databaseLayer: Vehicle found: AB
+2025-03-30 21:12:51,699 [INFO] __main__: Returning vehicle: ABC289
+2025-03-30 21:13:09,113 [INFO] __main__: GET /FetchAllVehicleDetails called with vehicle_no: None
+2025-03-30 21:13:09,114 [INFO] businessLayer: Fetching all vehicles
+2025-03-30 21:13:09,115 [INFO] databaseLayer: Fetching all vehicles
+2025-03-30 21:13:09,125 [INFO] databaseLayer: Fetched 4 vehicles
+2025-03-30 21:13:09,125 [INFO] __main__: Returning all vehicles. Count: 4
+2025-03-30 21:19:10,413 [INFO] __main__: GET /FetchAllVehicleDetails called with vehicle_no: AB
+2025-03-30 21:19:10,416 [INFO] businessLayer: Fetching vehicles by number prefix: AB
+2025-03-30 21:19:10,820 [INFO] databaseLayer: Fetching vehicle by number: AB
+2025-03-30 21:19:10,878 [INFO] databaseLayer: Vehicles found: 2
+2025-03-30 21:19:10,880 [INFO] __main__: Returning all vehicles. Count: 2
+2025-03-30 21:19:17,118 [INFO] __main__: GET /FetchAllVehicleDetails called with vehicle_no: None
+2025-03-30 21:19:17,119 [INFO] businessLayer: Fetching all vehicles
+2025-03-30 21:19:17,123 [INFO] databaseLayer: Fetching all vehicles
+2025-03-30 21:19:17,128 [INFO] databaseLayer: Fetched 4 vehicles
+2025-03-30 21:19:17,129 [INFO] __main__: Returning all vehicles. Count: 4
+2025-03-30 21:19:50,827 [INFO] __main__: GET /FetchAllVehicleDetails called with vehicle_no: AB
+2025-03-30 21:19:50,829 [INFO] businessLayer: Fetching vehicles by number prefix: AB
+2025-03-30 21:19:51,091 [INFO] databaseLayer: Fetching vehicle by number: AB
+2025-03-30 21:19:51,099 [INFO] databaseLayer: Vehicles found: 2
+2025-03-30 21:19:51,151 [INFO] __main__: Returning all vehicles. Count: 2
+2025-03-30 21:28:55,426 [INFO] __main__: POST /VehicleDetails called with: {'isCompleted': True, 'no_of_safety_check': 3, 'vehicle_no': 'TEST1@3'}
+2025-03-30 21:28:55,462 [ERROR] businessLayer: Error in vehicle_details(): Invalid vehicle number. It must be 5–10 characters long and contain only A-Z, 0–9, hyphen, or space.
+2025-03-30 21:28:55,470 [ERROR] __main__: POST /VehicleDetails error: Invalid vehicle number. It must be 5–10 characters long and contain only A-Z, 0–9, hyphen, or space.
+2025-03-30 21:29:06,184 [INFO] __main__: GET /FetchAllVehicleDetails called with vehicle_no: None
+2025-03-30 21:29:06,187 [INFO] businessLayer: Fetching all vehicles
+2025-03-30 21:29:06,942 [INFO] databaseLayer: Fetching all vehicles
+2025-03-30 21:29:07,004 [INFO] databaseLayer: Fetched 4 vehicles
+2025-03-30 21:29:07,008 [INFO] __main__: Returning all vehicles. Count: 4
+2025-03-30 21:42:26,369 [INFO] __main__: GET /FetchAllVehicleDetails called with vehicle_no: None
+2025-03-30 21:42:26,377 [INFO] businessLayer: Fetching all vehicles
+2025-03-30 21:42:26,691 [INFO] databaseLayer: Fetching all vehicles
+2025-03-30 21:42:26,843 [INFO] databaseLayer: Fetched 4 vehicles
+2025-03-30 21:42:26,847 [INFO] __main__: Returning all vehicles. Count: 4
+2025-03-30 21:45:00,272 [INFO] __main__: GET /FetchAllVehicleDetails called with vehicle_no: None
+2025-03-30 21:45:00,279 [INFO] businessLayer: Fetching all vehicles
+2025-03-30 21:45:00,483 [INFO] databaseLayer: Fetching all vehicles
+2025-03-30 21:45:00,601 [INFO] databaseLayer: Fetched 4 vehicles
+2025-03-30 21:45:00,605 [INFO] __main__: Returning all vehicles. Count: 4
+2025-03-30 21:45:34,388 [INFO] __main__: PUT /UpdateVehicleDetails called with: {'vehicle_no': 'ABC289', 'no_of_safety_check': 11, 'isCompleted': 1}
+2025-03-30 21:45:34,392 [INFO] businessLayer: Updating vehicle: vehicle_no=ABC289
+2025-03-30 21:45:34,397 [INFO] databaseLayer: Updating vehicle: ABC289
+2025-03-30 21:45:34,527 [INFO] databaseLayer: Vehicle updated: ABC289
+2025-03-30 21:45:34,532 [INFO] businessLayer: Update successful for vehicle: ABC289
+2025-03-30 21:45:34,532 [INFO] __main__: Vehicle updated successfully: ABC289
+2025-03-30 21:45:35,061 [INFO] __main__: GET /FetchAllVehicleDetails called with vehicle_no: None
+2025-03-30 21:45:35,061 [INFO] businessLayer: Fetching all vehicles
+2025-03-30 21:45:35,063 [INFO] databaseLayer: Fetching all vehicles
+2025-03-30 21:45:35,132 [INFO] databaseLayer: Fetched 4 vehicles
+2025-03-30 21:45:35,133 [INFO] __main__: Returning all vehicles. Count: 4
+2025-03-30 21:45:43,624 [INFO] __main__: PUT /UpdateVehicleDetails called with: {'vehicle_no': 'ABC289', 'no_of_safety_check': 11, 'isCompleted': 0}
+2025-03-30 21:45:43,625 [INFO] businessLayer: Updating vehicle: vehicle_no=ABC289
+2025-03-30 21:45:43,628 [INFO] databaseLayer: Updating vehicle: ABC289
+2025-03-30 21:45:43,718 [INFO] databaseLayer: Vehicle updated: ABC289
+2025-03-30 21:45:43,720 [INFO] businessLayer: Update successful for vehicle: ABC289
+2025-03-30 21:45:43,720 [INFO] __main__: Vehicle updated successfully: ABC289
+2025-03-30 21:45:43,964 [INFO] __main__: GET /FetchAllVehicleDetails called with vehicle_no: None
+2025-03-30 21:45:43,964 [INFO] businessLayer: Fetching all vehicles
+2025-03-30 21:45:43,966 [INFO] databaseLayer: Fetching all vehicles
+2025-03-30 21:45:43,972 [INFO] databaseLayer: Fetched 4 vehicles
+2025-03-30 21:45:43,974 [INFO] __main__: Returning all vehicles. Count: 4
+2025-03-30 21:46:24,045 [INFO] __main__: GET /FetchAllVehicleDetails called with vehicle_no: None
+2025-03-30 21:46:24,047 [INFO] businessLayer: Fetching all vehicles
+2025-03-30 21:46:24,048 [INFO] databaseLayer: Fetching all vehicles
+2025-03-30 21:46:24,068 [INFO] databaseLayer: Fetched 4 vehicles
+2025-03-30 21:46:24,069 [INFO] __main__: Returning all vehicles. Count: 4
+2025-03-30 21:53:27,826 [INFO] __main__: GET /FetchAllVehicleDetails called with vehicle_no: None
+2025-03-30 21:53:27,835 [INFO] businessLayer: Fetching all vehicles
+2025-03-30 21:53:28,048 [INFO] databaseLayer: Fetching all vehicles
+2025-03-30 21:53:28,248 [INFO] databaseLayer: Fetched 4 vehicles
+2025-03-30 21:53:28,251 [INFO] __main__: Returning all vehicles. Count: 4
+2025-03-30 21:55:42,450 [INFO] __main__: GET /FetchAllVehicleDetails called with vehicle_no: AB
+2025-03-30 21:55:42,453 [INFO] businessLayer: Fetching vehicles by number prefix: AB
+2025-03-30 21:55:42,516 [INFO] databaseLayer: Fetching vehicle by number: AB
+2025-03-30 21:55:42,638 [INFO] databaseLayer: Vehicles found: 2
+2025-03-30 21:55:42,643 [INFO] __main__: Returning all vehicles. Count: 2
+2025-03-30 21:55:47,310 [INFO] __main__: GET /FetchAllVehicleDetails called with vehicle_no: A
+2025-03-30 21:55:47,313 [INFO] businessLayer: Fetching vehicles by number prefix: A
+2025-03-30 21:55:47,315 [INFO] databaseLayer: Fetching vehicle by number: A
+2025-03-30 21:55:47,360 [INFO] databaseLayer: Vehicles found: 2
+2025-03-30 21:55:47,362 [INFO] __main__: Returning all vehicles. Count: 2
+2025-03-30 21:55:52,897 [INFO] __main__: GET /FetchAllVehicleDetails called with vehicle_no: Q
+2025-03-30 21:55:52,897 [INFO] businessLayer: Fetching vehicles by number prefix: Q
+2025-03-30 21:55:52,900 [INFO] databaseLayer: Fetching vehicle by number: Q
+2025-03-30 21:55:52,922 [INFO] databaseLayer: Vehicles found: 1
+2025-03-30 21:55:52,924 [INFO] __main__: Returning all vehicles. Count: 1
+2025-03-30 21:55:55,945 [INFO] __main__: GET /FetchAllVehicleDetails called with vehicle_no: None
+2025-03-30 21:55:55,946 [INFO] businessLayer: Fetching all vehicles
+2025-03-30 21:55:55,948 [INFO] databaseLayer: Fetching all vehicles
+2025-03-30 21:55:55,975 [INFO] databaseLayer: Fetched 4 vehicles
+2025-03-30 21:55:55,977 [INFO] __main__: Returning all vehicles. Count: 4

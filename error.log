@@ -13,3 +13,9 @@
 2025-03-30 16:48:45,117 [ERROR] app: POST /VehicleDetails error: Vehicle already exists
 2025-03-30 16:48:45,120 [ERROR] app: GET /FetchAllVehicleDetails error: 'DummyVehicle' object has no attribute 'vehicle_no'
 2025-03-30 16:50:17,654 [ERROR] app: POST /VehicleDetails error: Vehicle already exists
+2025-03-30 21:09:30,311 [ERROR] businessLayer: Error in vehicle_details(): Invalid vehicle number. It must be 5–10 characters long and contain only A-Z, 0–9, hyphen, or space.
+2025-03-30 21:09:30,319 [ERROR] __main__: POST /VehicleDetails error: Invalid vehicle number. It must be 5–10 characters long and contain only A-Z, 0–9, hyphen, or space.
+2025-03-30 21:12:22,656 [ERROR] businessLayer: Error in get_all_vehicle_details(): cannot access local variable 'rows' where it is not associated with a value
+2025-03-30 21:12:22,657 [ERROR] __main__: GET /FetchAllVehicleDetails error: cannot access local variable 'rows' where it is not associated with a value
+2025-03-30 21:28:55,462 [ERROR] businessLayer: Error in vehicle_details(): Invalid vehicle number. It must be 5–10 characters long and contain only A-Z, 0–9, hyphen, or space.
+2025-03-30 21:28:55,470 [ERROR] __main__: POST /VehicleDetails error: Invalid vehicle number. It must be 5–10 characters long and contain only A-Z, 0–9, hyphen, or space.

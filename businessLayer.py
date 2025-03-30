@@ -1,4 +1,5 @@
 import entity
+import re
 from logger_config import setup_logger
 
 logger = setup_logger(__name__)
@@ -9,11 +10,16 @@ class VehicleService:
 
     def vehicle_details(self, details):
         try:
-            vehicle = entity.Vehicle(
-                details.get('vehicle_no'),
-                details.get('no_of_safety_check'),
-                details.get('isCompleted')
-            )
+            vehicle_no = details.get('vehicle_no')
+            no_of_safety_check = details.get('no_of_safety_check')
+            is_completed = details.get('isCompleted')
+
+            # Validate vehicle_no using RegExp
+            pattern = re.compile(r'^[A-Z0-9\- ]{5,10}$')
+            if not pattern.match(vehicle_no):
+                raise ValueError("Invalid vehicle number. It must be 5–10 characters long and contain only A-Z, 0–9, hyphen, or space.")
+
+            vehicle = entity.Vehicle(vehicle_no, no_of_safety_check, is_completed)
             logger.info("Creating vehicle: vehicle_no=%s, no_of_safety_check=%s, isCompleted=%s",
                         vehicle.vehicle_no, vehicle.no_of_safety_check, vehicle.isCompleted)
             self.repo.insert_vehicle(vehicle)
@@ -24,16 +30,17 @@ class VehicleService:
     def get_all_vehicle_details(self, vehicle_no=None):
         try:
             if vehicle_no:
-                logger.info("Fetching vehicle by number: %s", vehicle_no)
-                row = self.repo.get_vehicle_by_number(vehicle_no)
-                return entity.Vehicle(*row) if row else None
+                logger.info("Fetching vehicles by number prefix: %s", vehicle_no)
+                rows = self.repo.get_vehicle_by_number(vehicle_no)
+                return [entity.Vehicle(*row) for row in rows] if rows else []
             else:
                 logger.info("Fetching all vehicles")
                 rows = self.repo.get_all_vehicles()
-                return [entity.Vehicle(*row) for row in rows]
+                return [entity.Vehicle(*row) for row in rows] if rows else []
         except Exception as e:
             logger.error("Error in get_all_vehicle_details(): %s", str(e))
             raise
+
 
     def update_vehicle_details(self, vehicle):
         try:

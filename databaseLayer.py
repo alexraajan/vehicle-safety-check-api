@@ -62,15 +62,12 @@ class VehicleRepository:
             conn = self.db_context.get_connection()
             cursor = conn.cursor()
             logger.info("Fetching vehicle by number: %s", vehicle_no)
-            cursor.execute("SELECT * FROM VehicleDetails WHERE vehicle_no = ?", (vehicle_no,))
-            row = cursor.fetchone()
-            if row:
-                logger.info("Vehicle found: %s", vehicle_no)
-            else:
-                logger.warning("Vehicle not found: %s", vehicle_no)
-            return row
+            cursor.execute("SELECT * FROM VehicleDetails WHERE vehicle_no LIKE ?", (vehicle_no + '%',))
+            rows = cursor.fetchall()
+            logger.info("Vehicles found: %d", len(rows))
+            return rows
         except Exception as e:
-            logger.error("Error fetching vehicle %s: %s", vehicle_no, str(e))
+            logger.error("Error fetching vehicles starting with %s: %s", vehicle_no, str(e))
             raise
         finally:
             if cursor: cursor.close()
