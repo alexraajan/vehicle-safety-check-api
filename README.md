@@ -64,19 +64,6 @@ CREATE TABLE VehicleDetails (
 
 ---
 
-## 🚀 Features
-
-- Add new vehicle safety records
-- Fetch specific or all vehicle records
-- Update vehicle safety check status
-- Delete vehicle records
-- Swagger documentation (Auto-generated)
-- Unit tests using `unittest`
-- MSSQL database integration
-- Clean architecture using Dependency Injection
-
----
-
 ## 🛠️ Tech Stack
 
 - Python 3.11+
@@ -162,4 +149,15 @@ vehicle_service = VehicleService(vehicle_repo)
 
 ---
 
+## 🚀 Features
 
+- Add new vehicle safety records
+- Fetch specific or all vehicle records
+- Update vehicle safety check status
+- Delete vehicle records
+- Swagger documentation (Auto-generated)
+- Unit tests using `unittest`
+- MSSQL database integration
+- Clean architecture using Dependency Injection
+
+---
