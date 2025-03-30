@@ -928,3 +928,66 @@
 2025-03-30 15:58:40,566 [INFO] databaseLayer: Fetching all vehicles
 2025-03-30 15:58:40,570 [INFO] databaseLayer: Fetched 3 vehicles
 2025-03-30 15:58:40,571 [INFO] __main__: Returning all vehicles. Count: 3
+2025-03-30 16:48:30,050 [INFO] app: POST /VehicleDetails called with: {'isCompleted': True, 'no_of_seafty_check': 3, 'vehicle_No': 'TEST1234'}
+2025-03-30 16:48:30,051 [ERROR] app: POST /VehicleDetails error: Vehicle already exists
+2025-03-30 16:48:30,054 [INFO] app: POST /VehicleDetails called with: {'isCompleted': True, 'no_of_seafty_check': 3, 'vehicle_No': 'TEST1234'}
+2025-03-30 16:48:30,054 [INFO] app: Vehicle created successfully.
+2025-03-30 16:48:30,055 [INFO] app: GET /FetchAllVehicleDetails called with vehicle_no: TEST1234
+2025-03-30 16:48:30,056 [ERROR] app: GET /FetchAllVehicleDetails error: 'DummyVehicle' object has no attribute 'vehicle_no'
+2025-03-30 16:48:30,058 [INFO] app: GET /FetchAllVehicleDetails called with vehicle_no: TEST1234
+2025-03-30 16:48:30,058 [WARNING] app: Vehicle not found: TEST1234
+2025-03-30 16:48:30,059 [INFO] app: PUT /UpdateVehicleDetails called with: {'isCompleted': True, 'no_of_seafty_check': 3, 'vehicle_No': 'TEST1234'}
+2025-03-30 16:48:30,060 [WARNING] app: Vehicle not found or update failed: None
+2025-03-30 16:48:30,061 [INFO] app: PUT /UpdateVehicleDetails called with: {'isCompleted': True, 'no_of_seafty_check': 3, 'vehicle_No': 'TEST1234'}
+2025-03-30 16:48:30,062 [INFO] app: Vehicle updated successfully: None
+2025-03-30 16:48:30,063 [INFO] app: GET /FetchAllVehicleDetails called with vehicle_no: None
+2025-03-30 16:48:30,063 [INFO] app: Returning all vehicles. Count: 0
+2025-03-30 16:48:30,064 [INFO] app: GET /FetchAllVehicleDetails called with vehicle_no: None
+2025-03-30 16:48:30,065 [INFO] app: Returning all vehicles. Count: 1
+2025-03-30 16:48:30,065 [WARNING] app: DELETE /DeleteVehicleDetails called without vehicle_no
+2025-03-30 16:48:30,066 [INFO] app: DELETE /DeleteVehicleDetails called for: TEST1234
+2025-03-30 16:48:30,066 [WARNING] app: Vehicle not found or deletion failed: TEST1234
+2025-03-30 16:48:30,067 [INFO] app: DELETE /DeleteVehicleDetails called for: TEST1234
+2025-03-30 16:48:30,068 [INFO] app: Vehicle deleted: TEST1234
+2025-03-30 16:48:45,117 [INFO] app: POST /VehicleDetails called with: {'isCompleted': True, 'no_of_seafty_check': 3, 'vehicle_No': 'TEST1234'}
+2025-03-30 16:48:45,117 [ERROR] app: POST /VehicleDetails error: Vehicle already exists
+2025-03-30 16:48:45,119 [INFO] app: POST /VehicleDetails called with: {'isCompleted': True, 'no_of_seafty_check': 3, 'vehicle_No': 'TEST1234'}
+2025-03-30 16:48:45,119 [INFO] app: Vehicle created successfully.
+2025-03-30 16:48:45,119 [INFO] app: GET /FetchAllVehicleDetails called with vehicle_no: TEST1234
+2025-03-30 16:48:45,120 [ERROR] app: GET /FetchAllVehicleDetails error: 'DummyVehicle' object has no attribute 'vehicle_no'
+2025-03-30 16:48:45,121 [INFO] app: GET /FetchAllVehicleDetails called with vehicle_no: TEST1234
+2025-03-30 16:48:45,121 [WARNING] app: Vehicle not found: TEST1234
+2025-03-30 16:48:45,123 [INFO] app: PUT /UpdateVehicleDetails called with: {'isCompleted': True, 'no_of_seafty_check': 3, 'vehicle_No': 'TEST1234'}
+2025-03-30 16:48:45,123 [WARNING] app: Vehicle not found or update failed: None
+2025-03-30 16:48:45,124 [INFO] app: PUT /UpdateVehicleDetails called with: {'isCompleted': True, 'no_of_seafty_check': 3, 'vehicle_No': 'TEST1234'}
+2025-03-30 16:48:45,124 [INFO] app: Vehicle updated successfully: None
+2025-03-30 16:48:45,125 [INFO] app: GET /FetchAllVehicleDetails called with vehicle_no: None
+2025-03-30 16:48:45,126 [INFO] app: Returning all vehicles. Count: 0
+2025-03-30 16:48:45,128 [INFO] app: GET /FetchAllVehicleDetails called with vehicle_no: None
+2025-03-30 16:48:45,128 [INFO] app: Returning all vehicles. Count: 1
+2025-03-30 16:48:45,129 [WARNING] app: DELETE /DeleteVehicleDetails called without vehicle_no
+2025-03-30 16:48:45,130 [INFO] app: DELETE /DeleteVehicleDetails called for: TEST1234
+2025-03-30 16:48:45,132 [WARNING] app: Vehicle not found or deletion failed: TEST1234
+2025-03-30 16:48:45,133 [INFO] app: DELETE /DeleteVehicleDetails called for: TEST1234
+2025-03-30 16:48:45,133 [INFO] app: Vehicle deleted: TEST1234
+2025-03-30 16:50:17,654 [INFO] app: POST /VehicleDetails called with: {'isCompleted': True, 'no_of_safety_check': 3, 'vehicle_no': 'TEST1234'}
+2025-03-30 16:50:17,654 [ERROR] app: POST /VehicleDetails error: Vehicle already exists
+2025-03-30 16:50:17,655 [INFO] app: POST /VehicleDetails called with: {'isCompleted': True, 'no_of_safety_check': 3, 'vehicle_no': 'TEST1234'}
+2025-03-30 16:50:17,656 [INFO] app: Vehicle created successfully.
+2025-03-30 16:50:17,656 [INFO] app: GET /FetchAllVehicleDetails called with vehicle_no: TEST1234
+2025-03-30 16:50:17,657 [INFO] app: Returning vehicle: TEST1234
+2025-03-30 16:50:17,658 [INFO] app: GET /FetchAllVehicleDetails called with vehicle_no: TEST1234
+2025-03-30 16:50:17,658 [WARNING] app: Vehicle not found: TEST1234
+2025-03-30 16:50:17,659 [INFO] app: PUT /UpdateVehicleDetails called with: {'isCompleted': True, 'no_of_safety_check': 3, 'vehicle_no': 'TEST1234'}
+2025-03-30 16:50:17,659 [WARNING] app: Vehicle not found or update failed: TEST1234
+2025-03-30 16:50:17,659 [INFO] app: PUT /UpdateVehicleDetails called with: {'isCompleted': True, 'no_of_safety_check': 3, 'vehicle_no': 'TEST1234'}
+2025-03-30 16:50:17,660 [INFO] app: Vehicle updated successfully: TEST1234
+2025-03-30 16:50:17,661 [INFO] app: GET /FetchAllVehicleDetails called with vehicle_no: None
+2025-03-30 16:50:17,661 [INFO] app: Returning all vehicles. Count: 0
+2025-03-30 16:50:17,663 [INFO] app: GET /FetchAllVehicleDetails called with vehicle_no: None
+2025-03-30 16:50:17,663 [INFO] app: Returning all vehicles. Count: 1
+2025-03-30 16:50:17,664 [WARNING] app: DELETE /DeleteVehicleDetails called without vehicle_no
+2025-03-30 16:50:17,666 [INFO] app: DELETE /DeleteVehicleDetails called for: TEST1234
+2025-03-30 16:50:17,666 [WARNING] app: Vehicle not found or deletion failed: TEST1234
+2025-03-30 16:50:17,668 [INFO] app: DELETE /DeleteVehicleDetails called for: TEST1234
+2025-03-30 16:50:17,668 [INFO] app: Vehicle deleted: TEST1234

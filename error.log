@@ -8,3 +8,8 @@
 2025-03-30 13:43:46,958 [ERROR] databaseLayer: Error inserting vehicle ABC23: Vehicle already exists
 2025-03-30 13:43:46,960 [ERROR] businessLayer: Error in vehicle_details(): Vehicle already exists
 2025-03-30 13:43:46,961 [ERROR] __main__: POST /VehicleDetails error: Vehicle already exists
+2025-03-30 16:48:30,051 [ERROR] app: POST /VehicleDetails error: Vehicle already exists
+2025-03-30 16:48:30,056 [ERROR] app: GET /FetchAllVehicleDetails error: 'DummyVehicle' object has no attribute 'vehicle_no'
+2025-03-30 16:48:45,117 [ERROR] app: POST /VehicleDetails error: Vehicle already exists
+2025-03-30 16:48:45,120 [ERROR] app: GET /FetchAllVehicleDetails error: 'DummyVehicle' object has no attribute 'vehicle_no'
+2025-03-30 16:50:17,654 [ERROR] app: POST /VehicleDetails error: Vehicle already exists
