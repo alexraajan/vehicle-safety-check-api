@@ -91,7 +91,7 @@ CREATE TABLE VehicleDetails (
 ## 📁 Project Structure
 
 ```plaintext
-project_API/
+vehicle-safety-check-api/
 ├── app.py                  # Main Flask application
 ├── businessLayer.py        # Business logic layer
 ├── databaseLayer.py        # Database operations layer
