@@ -1,6 +1,3 @@
-### Sample Test Result
-
-![Test Result](assets/test-result.png)
 
 
 # Vehicle Safety Check API
@@ -47,7 +44,10 @@ project_API/
 ├── tests/
 │   └── test_app.py         # Unit tests for all endpoints
 
-Unit Testing
+
+### Unit Testing
+
+
 python -m unittest tests/test_app.py
 Sample test coverage includes:
 test_1_post_vehicle_success
@@ -62,10 +62,7 @@ test_5_delete_vehicle_success
 test_5_delete_vehicle_not_found
 test_5_delete_vehicle_missing_param
 
-Sample test result:
 ![Test Result](assets/test-result.png)
-<img width="626" alt="image" src="https://github.com/user-attachments/assets/82ff6e10-9b94-44fd-8c6d-bfe5c07e9fe9" />
-![Test Result](https://github.com/user-attachments/assets/82ff6e10-9b94-44fd-8c6d-bfe5c07e9fe9.png)
 
 
 Setup Instructions
