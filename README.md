@@ -58,6 +58,7 @@ test_5_delete_vehicle_not_found
 test_5_delete_vehicle_missing_param
 
 Sample test result:
+![Test Result](assets/test-result.png)
 <img width="626" alt="image" src="https://github.com/user-attachments/assets/82ff6e10-9b94-44fd-8c6d-bfe5c07e9fe9" />
 ![Test Result](https://github.com/user-attachments/assets/82ff6e10-9b94-44fd-8c6d-bfe5c07e9fe9.png)
 
@@ -100,6 +101,7 @@ GET 	  /api/vehicle-details	  Get all / specific vehicle
 PUT 	  /api/vehicle-details    Update vehicle info
 DELETE	/api/vehicle-details	  Delete a vehicle
 Swagger UI Screenshot:
+![Swagger UI](assets/swagger-ui.png)
 <img width="950" alt="image" src="https://github.com/user-attachments/assets/b63e497d-6456-4c00-844e-7d57f70ef4c0" />
 
 Architecture Notes
