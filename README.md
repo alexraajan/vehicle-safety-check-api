@@ -59,6 +59,8 @@ test_5_delete_vehicle_missing_param
 
 Sample test result:
 <img width="626" alt="image" src="https://github.com/user-attachments/assets/82ff6e10-9b94-44fd-8c6d-bfe5c07e9fe9" />
+![Test Result](https://github.com/user-attachments/assets/82ff6e10-9b94-44fd-8c6d-bfe5c07e9fe9)
+
 
 Setup Instructions
 1) Clone the repository:
