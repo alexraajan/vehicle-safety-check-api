@@ -34,7 +34,7 @@ Update your `env_parameters.json`:
 {
   "environment": "dev",
   "dev": {
-    "DbConnectionString": "DRIVER={ODBC Driver 17 for SQL Server};SERVER=ALEX_LENOVO\\SQLEXPRESS;DATABASE=ProjectSG;Trusted_Connection=yes"
+    "DbConnectionString": "DRIVER={ODBC Driver 17 for SQL Server};SERVER=ALEX_LENOVO\SQLEXPRESS;DATABASE=ProjectSG;Trusted_Connection=yes"
   }
 }
 ```
